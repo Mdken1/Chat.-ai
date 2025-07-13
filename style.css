@@ -1,0 +1,299 @@
+  /* Absolutely! Here’s a simple, modern CSS you can use to give your chatbot a clean and attractive look. Just copy and replace your chatbot.css file with this:
+
+  css
+  body {
+      background: #f5f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }.container {
+      max-width: 400px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      padding: 0;
+      overflow: hidden;
+  }.chat {
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      padding: 20px;
+  }.messages {
+      flex: 1;
+      overflow-y: auto;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+  }.user.response,.bot.response {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }.user.response {
+      justify-content: flex-end;
+  }.bot.response {
+      justify-content: flex-start;
+  }.avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #e0e0e0;
+  }.user.response span {
+      background: #0078d7;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 18px 18px 2px 18px;
+      font-size: 15px;
+      max-width: 70%;
+      word-break: break-word;
+  }.bot.response span {
+      background: #f1f1f1;
+      color: #222;
+      padding: 10px 16px;
+      border-radius: 18px 18px 18px 2px;
+      font-size: 15px;
+      max-width: 70%;
+      word-break: break-word;
+  }
+
+  #input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #e0e0e0;
+      border-radius: 24px;
+      font-size: 16px;
+      outline: none;
+      box-sizing: border-box;
+      transition: border 0.2s;
+  }
+
+  #input:focus {
+      border-color: #0078d7;
+  }
+
+
+  This will make your chatbot look clean, modern, and easy to use! 😎
+
+  Want any custom colors or extra features? */
+
+
+
+
+  /* 
+  Absolutely! Here’s a dynamic, modern CSS layout for your chatbot—featuring a sleek card design, message bubbles, subtle shadows, and a responsive layout. You can further tweak colors and animations as you like!
+
+  css */
+  body {
+    background: linear-gradient(135deg, #e0e7ff 0%, #f0f4f9 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }.container {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(60, 72, 88, 0.18);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    background: #4f8cff;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 1.5px solid #e0e7ef;
+  }.footer {
+    background: #f1f5f9;
+    color: #888;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 13px;
+    border-top: 1.5px solid #e0e7ef;
+  }
+
+/* .search-container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 6px 14px;
+  width: 320px;
+  margin: 20px auto;
+}.search-input {
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  flex: 1;
+}.search-btn {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 6px;
+  transition: background 0.2s;
+}.search-btn:hover {
+  background: #2563eb;
+} */
+
+
+
+  .chat {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+/* 
+  position: relative;
+  width: 100%;
+  max-width: 600px; */
+}
+
+#chat {
+  /* flex: 1;
+  padding: 10px; */
+  width: 100%;
+  padding-right: 40px; /* space for button */
+  box-sizing: border-box;
+}
+
+  #send-btn {
+  /* padding: 10px 20px;
+  cursor: pointer; 
+   position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  background: red;
+  cursor: pointer;
+  padding: 5px;
+  color: #007bff; /* blue or any color you want*/
+  /* transition: color 0.3s ease;  */
+  
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 6px;
+  transition: background 0.2s;
+
+}
+
+#send-btn:hover {
+  background: #2563eb;
+} 
+
+  #chat {
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    padding: 0 0 12px 0;
+  }
+
+  #messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }.user.response,.bot.response {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    animation: fadeIn 0.5s;
+  }.user.response {
+    justify-content: flex-end;
+  }.bot.response {
+    justify-content: flex-start;
+  }.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }.user.response span {
+    background: linear-gradient(135deg, #4f8cff 60%, #5eead4 100%);
+    color: #fff;
+    padding: 11px 18px;
+    border-radius: 18px 18px 2px 18px;
+    font-size: 15px;
+    max-width: 70%;
+    word-break: break-word;
+    box-shadow: 0 1px 4px rgba(79,140,255,0.08);
+  }.bot.response span {
+    background: #f1f5f9;
+    color: #222;
+    padding: 11px 18px;
+    border-radius: 18px 18px 18px 2px;
+    font-size: 15px;
+    max-width: 70%;
+    word-break: break-word;
+    box-shadow: 0 1px 4px rgba(60,72,88,0.07);
+  }
+
+  #input {
+    width: 92%;
+    margin: 0 4%;
+    padding: 13px 16px;
+    border: 1.5px solid #e0e7ef;
+    border-radius: 24px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    background: #f8fafc;
+    margin-top: 10px;
+
+    /* border: none;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  flex: 1; */
+    transition: border 0.2s;
+  }
+
+  #input:focus {
+    border-color: #4f8cff;
+    background: #fff;
+  }
+
+  @media (max-width: 500px) {.container {
+      max-width: 100vw;
+      border-radius: 0;
+    }
+    #chat {
+      height: 80vh;
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(16px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+
+  /* 
+  This gives you a modern, mobile-friendly, and visually appealing chatbot UI! 😎
+
+  Want to add a dark mode or more animations? */
