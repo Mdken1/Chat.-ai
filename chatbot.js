@@ -1,32 +1,25 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     const inputField = document.getElementById("input");
-//     inputField.addEventListener("keydown", (e) => {
-//       if (e.code === "Enter") {
-//         let input = inputField.value;
-//         inputField.value = "";
-//         output(input);
-//       }
-//     });
-//   });
-// document.addEventListener("DOMContentLoaded", () => {
-//   const inputField = document.getElementById("input");
-//   const sendBtn = document.getElementById("send-btn");
-
-//   function handleInput() {
-//     let input = inputField.value;
-//     if (input.trim() === "") return;
-//     inputField.value = "";
-//     output(input);
-//   }
-
-document.getElementById("send-btn").addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
+    const inputField = document.getElementById("input");
+    inputField.addEventListener("keydown", (e) => {
+      if (e.code === "Enter") {
+        let input = inputField.value;
+        inputField.value = "";
+        output(input);
+      }
+    });
+  });
+document.addEventListener("DOMContentLoaded", () => {
   const inputField = document.getElementById("input");
-  const input = inputField.value.trim();
-  if (input) {
+  const sendBtn = document.getElementById("send-btn");
+
+  function handleInput() {
+    let input = inputField.value;
+    if (input.trim() === "") return;
     inputField.value = "";
     output(input);
   }
-});
+
+
 
 
   inputField.addEventListener("keydown", (e) => {
